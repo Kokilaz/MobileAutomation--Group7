@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class homePage extends mobileAPI {
 
-    @FindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Open menu\"]")
+    @FindBy(xpath = "//android.widget.ImageButton[@content-desc='Open menu']")
     WebElement hamBurger;
 
     public void setHamBurger(){

@@ -5,8 +5,6 @@ import org.testng.annotations.Test;
 public class homePageTest extends  homePage{
 
     homePage homepage;
-
-
     @BeforeMethod
     public void navigate(){
         homepage = PageFactory.initElements(ad, homePage.class);
