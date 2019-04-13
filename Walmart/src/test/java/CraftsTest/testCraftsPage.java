@@ -1,119 +1,111 @@
 package testDepartmentsPage;
 
 import Reporting.TestLogger;
-import departments.AllDepartments;
-import departments.clothingPage;
+import Crafts.craftsPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class testClothingPage extends clothingPage {
-    clothingPage clothingpage;
+public class testCraftsPage extends craftsPage {
+    craftsPage craftspage;
+
     @BeforeMethod
-    public void navigate(){ clothingpage = PageFactory.initElements(ad, clothingPage.class);
+    public void navigate() {
+        craftspage = PageFactory.initElements(ad, craftsPage.class);
     }
 
     @Test
-    public void getAllTab(){
+    public void getAllTab() {
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        clothingpage.setAllTab();
+        craftspage.setAllTab();
+
     }
 
     @Test
-    public void getAllDepartments(){
+    public void getAllDepartments() {
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        clothingpage.setAllTab();
-        clothingpage.setAllDepartments();
+        craftspage.setAllTab();
+        craftspage.setAllDepartments();
     }
 
     @Test
-    public void getClothesTab(){
+    public void getCraftsTAb() {
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        clothingpage.setAllTab();
-        clothingpage.setAllDepartments();
-        clothingpage.setClothesTab();
+        craftspage.setAllTab();
+        craftspage.setAllDepartments();
+        craftspage.setCraftsTab();
     }
 
     @Test
-    public void getMen(){
+    public void getSewing() {
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        clothingpage.setAllTab();
-        clothingpage.setAllDepartments();
-        clothingpage.setClothesTab();
-        clothingpage.setMen();
+        craftspage.setAllTab();
+        craftspage.setAllDepartments();
+        craftspage.setCraftsTab();
+        craftspage.setSewing();
     }
 
     @Test
-    public void getWomen(){
+    public void getArtSupplies() {
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        clothingpage.setAllTab();
-        clothingpage.setAllDepartments();
-        clothingpage.setClothesTab();
-        clothingpage.setWomen();
+        craftspage.setAllTab();
+        craftspage.setAllDepartments();
+        craftspage.setCraftsTab();
+        craftspage.setArtSupplies();
     }
 
     @Test
-    public void getKids(){
+    public void getCrafting(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        clothingpage.setAllTab();
-        clothingpage.setAllDepartments();
-        clothingpage.setClothesTab();
-        clothingpage.setKids();
+        craftspage.setAllTab();
+        craftspage.setAllDepartments();
+        craftspage.setCraftsTab();
+        craftspage.setCrafting();
     }
 
     @Test
-    public void getBigNTall(){
+    public void getfabric(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        clothingpage.setAllTab();
-        clothingpage.setAllDepartments();
-        clothingpage.setClothesTab();
-        clothingpage.setBigNTall();
+        craftspage.setAllTab();
+        craftspage.setAllDepartments();
+        craftspage.setCraftsTab();
+        craftspage.setFabric();
     }
 
     @Test
-    public void getBagsNAccesories(){
+    public void getScrapbooking(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        clothingpage.setAllTab();
-        clothingpage.setAllDepartments();
-        clothingpage.setClothesTab();
-        clothingpage.setBagsNAccessories();
+        craftspage.setAllTab();
+        craftspage.setAllDepartments();
+        craftspage.setCraftsTab();
+        craftspage.setScrapbooking();
     }
 
     @Test
-    public void getShoes(){
+    public void getCrayola(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        clothingpage.setAllTab();
-        clothingpage.setAllDepartments();
-        clothingpage.setClothesTab();
-        clothingpage.setShoes();
+        craftspage.setAllTab();
+        craftspage.setAllDepartments();
+        craftspage.setCraftsTab();
+        craftspage.setCrayola();
+    }
     }
 
-    @Test
-    public void getJuniors(){
-        TestLogger.log(convertToString(new Object() {
-        }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
-        }.getClass().getEnclosingMethod().getName()));
-        clothingpage.setAllTab();
-        clothingpage.setAllDepartments();
-        clothingpage.setClothesTab();
-        clothingpage.setJuniors();
-    }
-}

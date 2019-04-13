@@ -1,17 +1,17 @@
 package testDepartmentsPage;
 
 import Reporting.TestLogger;
-import departments.AllDepartments;
-import departments.BooksPage;
+import Baby.BabyPage;
+import Beauty.BeautyPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class testBooksPage extends BooksPage {
-    BooksPage booksPage;
+public class testBeautyPage extends BabyPage {
 
+BeautyPage beautyPage;
     @BeforeMethod
-    public void navigate(){booksPage = PageFactory.initElements(ad, BooksPage.class);
+    public void navigate(){ beautyPage = PageFactory.initElements(ad, BeautyPage.class);
     }
 
     @Test
@@ -19,81 +19,82 @@ public class testBooksPage extends BooksPage {
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        booksPage.setAllTab();
+        beautyPage.setAllTab();
 
     }
 
     @Test
-    public void getAllDepartments(){
+    public void getAllDepartments() {
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        booksPage.setAllTab();
-        booksPage.setAllDepartments();
+        beautyPage.setAllTab();
+        beautyPage.setAllDepartments();
     }
 
     @Test
-    public void getBooksTab(){
+    public void getBeautyTab(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        booksPage.setAllTab();
-        booksPage.setAllDepartments();
-        booksPage.setBooksTab();
+        beautyPage.setAllTab();
+        beautyPage.setAllDepartments();
+        beautyPage.setBeautyTab();
     }
 
     @Test
-    public void getChildrenBooks(){
+    public void getHairCare(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        booksPage.setAllTab();
-        booksPage.setAllDepartments();
-        booksPage.setBooksTab();
-        booksPage.setChildrenBooks();
+        beautyPage.setAllTab();
+        beautyPage.setAllDepartments();
+        beautyPage.setBeautyTab();
+        beautyPage.setHairCare();
     }
 
     @Test
-    public void getEbooks(){
+    public void getMakeUp(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        booksPage.setAllTab();
-        booksPage.setAllDepartments();
-        booksPage.setBooksTab();
-        booksPage.setEbooks();
+        beautyPage.setAllTab();
+        beautyPage.setAllDepartments();
+        beautyPage.setBeautyTab();
+        beautyPage.setMakeUp();
     }
 
     @Test
-    public void getReligiousNSpiritualityBooks(){
+    public void getSkinCare(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        booksPage.setAllTab();
-        booksPage.setAllDepartments();
-        booksPage.setBooksTab();
-        booksPage.setReligionNSpiritualityBooks();
+        beautyPage.setAllTab();
+        beautyPage.setAllDepartments();
+        beautyPage.setBeautyTab();
+        beautyPage.setSkinCare();
     }
 
     @Test
-    public void getFictionBooks(){
+    public void getFragrance(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        booksPage.setAllTab();
-        booksPage.setAllDepartments();
-        booksPage.setBooksTab();
-        booksPage.setFictionBooks();
+        beautyPage.setAllTab();
+        beautyPage.setAllDepartments();
+        beautyPage.setBeautyTab();
+        beautyPage.setFragrance();
     }
 
     @Test
-    public void getCookBooks(){
+    public void getAromatherapy(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        booksPage.setAllTab();
-        booksPage.setAllDepartments();
-        booksPage.setBooksTab();
-        booksPage.setCookBooks();
+        beautyPage.setAllTab();
+        beautyPage.setAllDepartments();
+        beautyPage.setBeautyTab();
+        beautyPage.setBeautyTab();
+        beautyPage.setAromaTherapy();
     }
 }

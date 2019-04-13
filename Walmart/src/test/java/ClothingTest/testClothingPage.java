@@ -1,18 +1,15 @@
 package testDepartmentsPage;
 
 import Reporting.TestLogger;
-import departments.AllDepartments;
-import departments.AutoPage;
-import org.openqa.selenium.support.FindBy;
+import clothing.clothingPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class testAutoPage extends AutoPage {
-
-    AutoPage autoPage;
+public class testClothingPage extends clothingPage {
+    clothingPage clothingpage;
     @BeforeMethod
-    public void navigate(){ autoPage = PageFactory.initElements(ad, AutoPage.class);
+    public void navigate(){ clothingpage = PageFactory.initElements(ad, clothingPage.class);
     }
 
     @Test
@@ -20,7 +17,7 @@ public class testAutoPage extends AutoPage {
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        autoPage.setAllTab();
+        clothingpage.setAllTab();
     }
 
     @Test
@@ -28,96 +25,94 @@ public class testAutoPage extends AutoPage {
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        autoPage.setAllTab();
-        autoPage.setAllDepartments();
+        clothingpage.setAllTab();
+        clothingpage.setAllDepartments();
     }
 
     @Test
-    public void getAutoNTiresTab(){
+    public void getClothesTab(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        autoPage.setAllTab();
-        autoPage.setAllDepartments();
-        autoPage.setAutoNTiresTab();
-    }
-
-
-    @Test
-    public void getTires(){
-        TestLogger.log(convertToString(new Object() {
-        }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
-        }.getClass().getEnclosingMethod().getName()));
-        autoPage.setAllTab();
-        autoPage.setAllDepartments();
-        autoPage.setAutoNTiresTab();
-        autoPage.setTires();
+        clothingpage.setAllTab();
+        clothingpage.setAllDepartments();
+        clothingpage.setClothesTab();
     }
 
     @Test
-    public void getOilsNFluids(){
+    public void getMen(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        autoPage.setAllTab();
-        autoPage.setAllDepartments();
-        autoPage.setAutoNTiresTab();
-        autoPage.setOilsNFluids();
+        clothingpage.setAllTab();
+        clothingpage.setAllDepartments();
+        clothingpage.setClothesTab();
+        clothingpage.setMen();
     }
 
     @Test
-    public void getAutomativeReplacementParts(){
+    public void getWomen(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        autoPage.setAutomativeReplacementParts();
-        autoPage.setAllTab();
-        autoPage.setAllDepartments();
-        autoPage.setAutoNTiresTab();
-        autoPage.setAutomativeReplacementParts();
+        clothingpage.setAllTab();
+        clothingpage.setAllDepartments();
+        clothingpage.setClothesTab();
+        clothingpage.setWomen();
     }
 
     @Test
-    public void getAutoElectronics(){
+    public void getKids(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        autoPage.setAllTab();
-        autoPage.setAllDepartments();
-        autoPage.setAutoNTiresTab();
-        autoPage.setAutoElectronics();
+        clothingpage.setAllTab();
+        clothingpage.setAllDepartments();
+        clothingpage.setClothesTab();
+        clothingpage.setKids();
     }
 
     @Test
-    public void getAutomativeTools(){
+    public void getBigNTall(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        autoPage.setAllTab();
-        autoPage.setAllDepartments();
-        autoPage.setAutoNTiresTab();
-        autoPage.setAutomativeTools();
+        clothingpage.setAllTab();
+        clothingpage.setAllDepartments();
+        clothingpage.setClothesTab();
+        clothingpage.setBigNTall();
     }
 
     @Test
-    public void getExteriorCarAccessories(){
+    public void getBagsNAccesories(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        autoPage.setAllTab();
-        autoPage.setAllDepartments();
-        autoPage.setAutoNTiresTab();
-        autoPage.setExteriorCarAccessories();
+        clothingpage.setAllTab();
+        clothingpage.setAllDepartments();
+        clothingpage.setClothesTab();
+        clothingpage.setBagsNAccessories();
     }
 
     @Test
-    public void getRvPartsAccessories(){
+    public void getShoes(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        autoPage.setAllTab();
-        autoPage.setAllDepartments();
-        autoPage.setAutoNTiresTab();
-        autoPage.setRvPartsNAccessories();
+        clothingpage.setAllTab();
+        clothingpage.setAllDepartments();
+        clothingpage.setClothesTab();
+        clothingpage.setShoes();
+    }
+
+    @Test
+    public void getJuniors(){
+        TestLogger.log(convertToString(new Object() {
+        }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
+        clothingpage.setAllTab();
+        clothingpage.setAllDepartments();
+        clothingpage.setClothesTab();
+        clothingpage.setJuniors();
     }
 }

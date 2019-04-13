@@ -1,112 +1,98 @@
 package testDepartmentsPage;
 
 import Reporting.TestLogger;
-import departments.AutoPage;
-import departments.BabyPage;
-import org.openqa.selenium.support.FindBy;
+import Books.BooksPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class testBabyPage extends BabyPage {
-
-    BabyPage babyPage;
+public class testBooksPage extends BooksPage {
+    BooksPage booksPage;
 
     @BeforeMethod
-    public void navigate() {
-        babyPage = PageFactory.initElements(ad, BabyPage.class);
+    public void navigate(){booksPage = PageFactory.initElements(ad, BooksPage.class);
     }
 
     @Test
-    public void getAllTab() {
+    public void getAllTab(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        babyPage.setAllTab();
+        booksPage.setAllTab();
+
     }
 
     @Test
-    public void getAllDepartments() {
+    public void getAllDepartments(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        babyPage.setAllTab();
-        babyPage.setAllDepartments();
+        booksPage.setAllTab();
+        booksPage.setAllDepartments();
     }
 
     @Test
-    public void getBabyTab(){
+    public void getBooksTab(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        babyPage.setAllTab();
-        babyPage.setAllDepartments();
-        babyPage.setBabyTab();
+        booksPage.setAllTab();
+        booksPage.setAllDepartments();
+        booksPage.setBooksTab();
     }
 
     @Test
-    public void getFeeding(){
+    public void getChildrenBooks(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        babyPage.setAllTab();
-        babyPage.setAllDepartments();
-        babyPage.setBabyTab();
-        babyPage.setFeeding();
+        booksPage.setAllTab();
+        booksPage.setAllDepartments();
+        booksPage.setBooksTab();
+        booksPage.setChildrenBooks();
     }
 
     @Test
-    public void getDiapering(){
+    public void getEbooks(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        babyPage.setAllTab();
-        babyPage.setAllDepartments();
-        babyPage.setBabyTab();
-        babyPage.setDiapering();
+        booksPage.setAllTab();
+        booksPage.setAllDepartments();
+        booksPage.setBooksTab();
+        booksPage.setEbooks();
     }
 
     @Test
-    public void getCarSeats(){
+    public void getReligiousNSpiritualityBooks(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        babyPage.setAllTab();
-        babyPage.setAllDepartments();
-        babyPage.setBabyTab();
-        babyPage.setCarSeats();
+        booksPage.setAllTab();
+        booksPage.setAllDepartments();
+        booksPage.setBooksTab();
+        booksPage.setReligionNSpiritualityBooks();
     }
 
     @Test
-    public void getStrollers(){
+    public void getFictionBooks(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        babyPage.setAllTab();
-        babyPage.setAllDepartments();
-        babyPage.setBabyTab();
-        babyPage.setStrollers();
+        booksPage.setAllTab();
+        booksPage.setAllDepartments();
+        booksPage.setBooksTab();
+        booksPage.setFictionBooks();
     }
 
     @Test
-    public void getToddler(){
+    public void getCookBooks(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        babyPage.setAllTab();
-        babyPage.setAllDepartments();
-        babyPage.setBabyTab();
-        babyPage.setToddler();
-    }
-
-    @Test
-    public void getNursery(){
-        TestLogger.log(convertToString(new Object() {
-        }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
-        }.getClass().getEnclosingMethod().getName()));
-        babyPage.setAllTab();
-        babyPage.setAllDepartments();
-        babyPage.setBabyTab();
-        babyPage.setNursery();
+        booksPage.setAllTab();
+        booksPage.setAllDepartments();
+        booksPage.setBooksTab();
+        booksPage.setCookBooks();
     }
 }

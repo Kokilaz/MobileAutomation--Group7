@@ -1,112 +1,121 @@
 package testDepartmentsPage;
 
 import Reporting.TestLogger;
-import departments.AllDepartments;
-import departments.craftsPage;
+import Auto.AutoPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class testCraftsPage extends craftsPage {
-    craftsPage craftspage;
+public class testAutoPage extends AutoPage {
 
+    AutoPage autoPage;
     @BeforeMethod
-    public void navigate() {
-        craftspage = PageFactory.initElements(ad, craftsPage.class);
+    public void navigate(){ autoPage = PageFactory.initElements(ad, AutoPage.class);
     }
 
     @Test
-    public void getAllTab() {
+    public void getAllTab(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        craftspage.setAllTab();
-
+        autoPage.setAllTab();
     }
 
     @Test
-    public void getAllDepartments() {
+    public void getAllDepartments(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        craftspage.setAllTab();
-        craftspage.setAllDepartments();
+        autoPage.setAllTab();
+        autoPage.setAllDepartments();
     }
 
     @Test
-    public void getCraftsTAb() {
+    public void getAutoNTiresTab(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        craftspage.setAllTab();
-        craftspage.setAllDepartments();
-        craftspage.setCraftsTab();
+        autoPage.setAllTab();
+        autoPage.setAllDepartments();
+        autoPage.setAutoNTiresTab();
+    }
+
+
+    @Test
+    public void getTires(){
+        TestLogger.log(convertToString(new Object() {
+        }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
+        autoPage.setAllTab();
+        autoPage.setAllDepartments();
+        autoPage.setAutoNTiresTab();
+        autoPage.setTires();
     }
 
     @Test
-    public void getSewing() {
+    public void getOilsNFluids(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        craftspage.setAllTab();
-        craftspage.setAllDepartments();
-        craftspage.setCraftsTab();
-        craftspage.setSewing();
+        autoPage.setAllTab();
+        autoPage.setAllDepartments();
+        autoPage.setAutoNTiresTab();
+        autoPage.setOilsNFluids();
     }
 
     @Test
-    public void getArtSupplies() {
+    public void getAutomativeReplacementParts(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        craftspage.setAllTab();
-        craftspage.setAllDepartments();
-        craftspage.setCraftsTab();
-        craftspage.setArtSupplies();
+        autoPage.setAutomativeReplacementParts();
+        autoPage.setAllTab();
+        autoPage.setAllDepartments();
+        autoPage.setAutoNTiresTab();
+        autoPage.setAutomativeReplacementParts();
     }
 
     @Test
-    public void getCrafting(){
+    public void getAutoElectronics(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        craftspage.setAllTab();
-        craftspage.setAllDepartments();
-        craftspage.setCraftsTab();
-        craftspage.setCrafting();
+        autoPage.setAllTab();
+        autoPage.setAllDepartments();
+        autoPage.setAutoNTiresTab();
+        autoPage.setAutoElectronics();
     }
 
     @Test
-    public void getfabric(){
+    public void getAutomativeTools(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        craftspage.setAllTab();
-        craftspage.setAllDepartments();
-        craftspage.setCraftsTab();
-        craftspage.setFabric();
+        autoPage.setAllTab();
+        autoPage.setAllDepartments();
+        autoPage.setAutoNTiresTab();
+        autoPage.setAutomativeTools();
     }
 
     @Test
-    public void getScrapbooking(){
+    public void getExteriorCarAccessories(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        craftspage.setAllTab();
-        craftspage.setAllDepartments();
-        craftspage.setCraftsTab();
-        craftspage.setScrapbooking();
+        autoPage.setAllTab();
+        autoPage.setAllDepartments();
+        autoPage.setAutoNTiresTab();
+        autoPage.setExteriorCarAccessories();
     }
 
     @Test
-    public void getCrayola(){
+    public void getRvPartsAccessories(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        craftspage.setAllTab();
-        craftspage.setAllDepartments();
-        craftspage.setCraftsTab();
-        craftspage.setCrayola();
+        autoPage.setAllTab();
+        autoPage.setAllDepartments();
+        autoPage.setAutoNTiresTab();
+        autoPage.setRvPartsNAccessories();
     }
-    }
-
+}

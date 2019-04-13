@@ -1,27 +1,26 @@
 package testDepartmentsPage;
 
 import Reporting.TestLogger;
-import departments.AllDepartments;
-import departments.BabyPage;
-import departments.BeautyPage;
+import Baby.BabyPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class testBeautyPage extends BabyPage {
+public class testBabyPage extends BabyPage {
 
-BeautyPage beautyPage;
+    BabyPage babyPage;
+
     @BeforeMethod
-    public void navigate(){ beautyPage = PageFactory.initElements(ad, BeautyPage.class);
+    public void navigate() {
+        babyPage = PageFactory.initElements(ad, BabyPage.class);
     }
 
     @Test
-    public void getAllTab(){
+    public void getAllTab() {
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        beautyPage.setAllTab();
-
+        babyPage.setAllTab();
     }
 
     @Test
@@ -29,73 +28,83 @@ BeautyPage beautyPage;
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        beautyPage.setAllTab();
-        beautyPage.setAllDepartments();
+        babyPage.setAllTab();
+        babyPage.setAllDepartments();
     }
 
     @Test
-    public void getBeautyTab(){
+    public void getBabyTab(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        beautyPage.setAllTab();
-        beautyPage.setAllDepartments();
-        beautyPage.setBeautyTab();
+        babyPage.setAllTab();
+        babyPage.setAllDepartments();
+        babyPage.setBabyTab();
     }
 
     @Test
-    public void getHairCare(){
+    public void getFeeding(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        beautyPage.setAllTab();
-        beautyPage.setAllDepartments();
-        beautyPage.setBeautyTab();
-        beautyPage.setHairCare();
+        babyPage.setAllTab();
+        babyPage.setAllDepartments();
+        babyPage.setBabyTab();
+        babyPage.setFeeding();
     }
 
     @Test
-    public void getMakeUp(){
+    public void getDiapering(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        beautyPage.setAllTab();
-        beautyPage.setAllDepartments();
-        beautyPage.setBeautyTab();
-        beautyPage.setMakeUp();
+        babyPage.setAllTab();
+        babyPage.setAllDepartments();
+        babyPage.setBabyTab();
+        babyPage.setDiapering();
     }
 
     @Test
-    public void getSkinCare(){
+    public void getCarSeats(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        beautyPage.setAllTab();
-        beautyPage.setAllDepartments();
-        beautyPage.setBeautyTab();
-        beautyPage.setSkinCare();
+        babyPage.setAllTab();
+        babyPage.setAllDepartments();
+        babyPage.setBabyTab();
+        babyPage.setCarSeats();
     }
 
     @Test
-    public void getFragrance(){
+    public void getStrollers(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        beautyPage.setAllTab();
-        beautyPage.setAllDepartments();
-        beautyPage.setBeautyTab();
-        beautyPage.setFragrance();
+        babyPage.setAllTab();
+        babyPage.setAllDepartments();
+        babyPage.setBabyTab();
+        babyPage.setStrollers();
     }
 
     @Test
-    public void getAromatherapy(){
+    public void getToddler(){
         TestLogger.log(convertToString(new Object() {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-        beautyPage.setAllTab();
-        beautyPage.setAllDepartments();
-        beautyPage.setBeautyTab();
-        beautyPage.setBeautyTab();
-        beautyPage.setAromaTherapy();
+        babyPage.setAllTab();
+        babyPage.setAllDepartments();
+        babyPage.setBabyTab();
+        babyPage.setToddler();
+    }
+
+    @Test
+    public void getNursery(){
+        TestLogger.log(convertToString(new Object() {
+        }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
+        }.getClass().getEnclosingMethod().getName()));
+        babyPage.setAllTab();
+        babyPage.setAllDepartments();
+        babyPage.setBabyTab();
+        babyPage.setNursery();
     }
 }
