@@ -12,6 +12,7 @@
         <module>Generic</module>
         <module>NYP</module>
         <module>UICatalog</module>
+        <module>Walmart</module>
     </modules>
 
     <dependencyManagement>

@@ -169,7 +169,7 @@ public class mobileAPI {
         }else if(OS.contains("Android")){
             if(appType.contains("Phone")){
                 appDirectory = new File("src/app");
-                findApp = new File(appDirectory,"nyp.apk");
+                findApp = new File(appDirectory,"Walmart_v19.14_apkpure.com.apk");
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
                     cap.setCapability(MobileCapabilityType.DEVICE_NAME,deviceName);
@@ -220,7 +220,7 @@ public class mobileAPI {
 
     }
 
-    @AfterMethod
+   /* @AfterMethod
     public void cleanUpApp(){
         ad.quit();
     }
@@ -269,7 +269,7 @@ public class mobileAPI {
         }catch (Exception e){
             System.err.println("No alert visible in 5 seconds");
         }
-    }
+    }*/
     public void scrollAndClickByName(String locator){
         ad.scrollTo(locator).click();
     }
