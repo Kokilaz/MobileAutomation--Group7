@@ -142,7 +142,5 @@ public class AllDepartments extends mobileAPI {
     public void setToysTab(){
         ToysTab.click();
     }
-    public void setVideoGamesTab(){
-        VideoGamesTab.click();
-    }
+    public void setVideoGamesTab(){ VideoGamesTab.click(); }
 }

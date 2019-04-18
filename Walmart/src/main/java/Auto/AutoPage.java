@@ -1,4 +1,4 @@
-package departments;
+package Auto;
 
 import common.mobileAPI;
 import org.openqa.selenium.WebElement;

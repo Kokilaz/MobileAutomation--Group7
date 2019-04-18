@@ -1,4 +1,4 @@
-package testDepartmentsPage;
+package BeautyTest;
 
 import Reporting.TestLogger;
 import Baby.BabyPage;
@@ -20,9 +20,7 @@ BeautyPage beautyPage;
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         beautyPage.setAllTab();
-
     }
-
     @Test
     public void getAllDepartments() {
         TestLogger.log(convertToString(new Object() {
@@ -31,7 +29,6 @@ BeautyPage beautyPage;
         beautyPage.setAllTab();
         beautyPage.setAllDepartments();
     }
-
     @Test
     public void getBeautyTab(){
         TestLogger.log(convertToString(new Object() {
@@ -41,7 +38,6 @@ BeautyPage beautyPage;
         beautyPage.setAllDepartments();
         beautyPage.setBeautyTab();
     }
-
     @Test
     public void getHairCare(){
         TestLogger.log(convertToString(new Object() {
@@ -52,7 +48,6 @@ BeautyPage beautyPage;
         beautyPage.setBeautyTab();
         beautyPage.setHairCare();
     }
-
     @Test
     public void getMakeUp(){
         TestLogger.log(convertToString(new Object() {
@@ -63,7 +58,6 @@ BeautyPage beautyPage;
         beautyPage.setBeautyTab();
         beautyPage.setMakeUp();
     }
-
     @Test
     public void getSkinCare(){
         TestLogger.log(convertToString(new Object() {
@@ -74,7 +68,6 @@ BeautyPage beautyPage;
         beautyPage.setBeautyTab();
         beautyPage.setSkinCare();
     }
-
     @Test
     public void getFragrance(){
         TestLogger.log(convertToString(new Object() {
@@ -85,7 +78,6 @@ BeautyPage beautyPage;
         beautyPage.setBeautyTab();
         beautyPage.setFragrance();
     }
-
     @Test
     public void getAromatherapy(){
         TestLogger.log(convertToString(new Object() {

@@ -1,4 +1,4 @@
-package departments;
+package Baby;
 
 import common.mobileAPI;
 import org.openqa.selenium.WebElement;

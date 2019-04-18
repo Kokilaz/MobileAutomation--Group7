@@ -1,4 +1,4 @@
-package departments;
+package clothing;
 
 import common.mobileAPI;
 import org.openqa.selenium.WebElement;

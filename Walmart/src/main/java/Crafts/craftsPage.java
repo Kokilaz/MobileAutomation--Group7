@@ -1,4 +1,4 @@
-package departments;
+package Crafts;
 
 import common.mobileAPI;
 import org.openqa.selenium.WebElement;

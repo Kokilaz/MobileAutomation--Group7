@@ -1,4 +1,4 @@
-package testDepartmentsPage;
+package BookTest;
 
 import Reporting.TestLogger;
 import Books.BooksPage;
@@ -19,9 +19,7 @@ public class testBooksPage extends BooksPage {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         booksPage.setAllTab();
-
     }
-
     @Test
     public void getAllDepartments(){
         TestLogger.log(convertToString(new Object() {
@@ -30,7 +28,6 @@ public class testBooksPage extends BooksPage {
         booksPage.setAllTab();
         booksPage.setAllDepartments();
     }
-
     @Test
     public void getBooksTab(){
         TestLogger.log(convertToString(new Object() {
@@ -40,7 +37,6 @@ public class testBooksPage extends BooksPage {
         booksPage.setAllDepartments();
         booksPage.setBooksTab();
     }
-
     @Test
     public void getChildrenBooks(){
         TestLogger.log(convertToString(new Object() {
@@ -51,7 +47,6 @@ public class testBooksPage extends BooksPage {
         booksPage.setBooksTab();
         booksPage.setChildrenBooks();
     }
-
     @Test
     public void getEbooks(){
         TestLogger.log(convertToString(new Object() {
@@ -62,7 +57,6 @@ public class testBooksPage extends BooksPage {
         booksPage.setBooksTab();
         booksPage.setEbooks();
     }
-
     @Test
     public void getReligiousNSpiritualityBooks(){
         TestLogger.log(convertToString(new Object() {
@@ -73,7 +67,6 @@ public class testBooksPage extends BooksPage {
         booksPage.setBooksTab();
         booksPage.setReligionNSpiritualityBooks();
     }
-
     @Test
     public void getFictionBooks(){
         TestLogger.log(convertToString(new Object() {
@@ -84,7 +77,6 @@ public class testBooksPage extends BooksPage {
         booksPage.setBooksTab();
         booksPage.setFictionBooks();
     }
-
     @Test
     public void getCookBooks(){
         TestLogger.log(convertToString(new Object() {

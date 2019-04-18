@@ -1,4 +1,4 @@
-package testDepartmentsPage;
+package ClothingTest;
 
 import Reporting.TestLogger;
 import clothing.clothingPage;
@@ -19,7 +19,6 @@ public class testClothingPage extends clothingPage {
         }.getClass().getEnclosingMethod().getName()));
         clothingpage.setAllTab();
     }
-
     @Test
     public void getAllDepartments(){
         TestLogger.log(convertToString(new Object() {
@@ -28,7 +27,6 @@ public class testClothingPage extends clothingPage {
         clothingpage.setAllTab();
         clothingpage.setAllDepartments();
     }
-
     @Test
     public void getClothesTab(){
         TestLogger.log(convertToString(new Object() {
@@ -38,7 +36,6 @@ public class testClothingPage extends clothingPage {
         clothingpage.setAllDepartments();
         clothingpage.setClothesTab();
     }
-
     @Test
     public void getMen(){
         TestLogger.log(convertToString(new Object() {
@@ -49,7 +46,6 @@ public class testClothingPage extends clothingPage {
         clothingpage.setClothesTab();
         clothingpage.setMen();
     }
-
     @Test
     public void getWomen(){
         TestLogger.log(convertToString(new Object() {
@@ -60,7 +56,6 @@ public class testClothingPage extends clothingPage {
         clothingpage.setClothesTab();
         clothingpage.setWomen();
     }
-
     @Test
     public void getKids(){
         TestLogger.log(convertToString(new Object() {
@@ -71,7 +66,6 @@ public class testClothingPage extends clothingPage {
         clothingpage.setClothesTab();
         clothingpage.setKids();
     }
-
     @Test
     public void getBigNTall(){
         TestLogger.log(convertToString(new Object() {
@@ -82,7 +76,6 @@ public class testClothingPage extends clothingPage {
         clothingpage.setClothesTab();
         clothingpage.setBigNTall();
     }
-
     @Test
     public void getBagsNAccesories(){
         TestLogger.log(convertToString(new Object() {
@@ -93,7 +86,6 @@ public class testClothingPage extends clothingPage {
         clothingpage.setClothesTab();
         clothingpage.setBagsNAccessories();
     }
-
     @Test
     public void getShoes(){
         TestLogger.log(convertToString(new Object() {
@@ -104,7 +96,6 @@ public class testClothingPage extends clothingPage {
         clothingpage.setClothesTab();
         clothingpage.setShoes();
     }
-
     @Test
     public void getJuniors(){
         TestLogger.log(convertToString(new Object() {

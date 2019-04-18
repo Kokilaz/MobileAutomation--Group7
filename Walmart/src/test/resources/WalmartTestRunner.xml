@@ -14,6 +14,12 @@
     <classes>
         <class name="testMainPage.HomePageTest"/>
         <class name="testDepartmentsPage.allDepartmentsPageTest"/>
+        <class name="AutoTest.testAutoPage"/>
+        <class name="BabyTest.testBabyPage"/>
+        <class name="BeautyTest.testBeautyPage"/>
+        <class name="BookTest.testBooksPage"/>
+        <class name="ClothingTest.testClothingPage"/>
+        <class name="CraftsTest.testCraftsPage"/>
     </classes>
 </test>
 </suite>

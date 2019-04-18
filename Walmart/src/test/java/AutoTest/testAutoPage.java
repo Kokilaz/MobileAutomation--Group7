@@ -1,4 +1,4 @@
-package testDepartmentsPage;
+package AutoTest;
 
 import Reporting.TestLogger;
 import Auto.AutoPage;
@@ -12,7 +12,6 @@ public class testAutoPage extends AutoPage {
     @BeforeMethod
     public void navigate(){ autoPage = PageFactory.initElements(ad, AutoPage.class);
     }
-
     @Test
     public void getAllTab(){
         TestLogger.log(convertToString(new Object() {
@@ -20,7 +19,6 @@ public class testAutoPage extends AutoPage {
         }.getClass().getEnclosingMethod().getName()));
         autoPage.setAllTab();
     }
-
     @Test
     public void getAllDepartments(){
         TestLogger.log(convertToString(new Object() {
@@ -29,7 +27,6 @@ public class testAutoPage extends AutoPage {
         autoPage.setAllTab();
         autoPage.setAllDepartments();
     }
-
     @Test
     public void getAutoNTiresTab(){
         TestLogger.log(convertToString(new Object() {
@@ -39,8 +36,6 @@ public class testAutoPage extends AutoPage {
         autoPage.setAllDepartments();
         autoPage.setAutoNTiresTab();
     }
-
-
     @Test
     public void getTires(){
         TestLogger.log(convertToString(new Object() {
@@ -51,7 +46,6 @@ public class testAutoPage extends AutoPage {
         autoPage.setAutoNTiresTab();
         autoPage.setTires();
     }
-
     @Test
     public void getOilsNFluids(){
         TestLogger.log(convertToString(new Object() {
@@ -62,7 +56,6 @@ public class testAutoPage extends AutoPage {
         autoPage.setAutoNTiresTab();
         autoPage.setOilsNFluids();
     }
-
     @Test
     public void getAutomativeReplacementParts(){
         TestLogger.log(convertToString(new Object() {
@@ -74,7 +67,6 @@ public class testAutoPage extends AutoPage {
         autoPage.setAutoNTiresTab();
         autoPage.setAutomativeReplacementParts();
     }
-
     @Test
     public void getAutoElectronics(){
         TestLogger.log(convertToString(new Object() {
@@ -85,7 +77,6 @@ public class testAutoPage extends AutoPage {
         autoPage.setAutoNTiresTab();
         autoPage.setAutoElectronics();
     }
-
     @Test
     public void getAutomativeTools(){
         TestLogger.log(convertToString(new Object() {
@@ -96,7 +87,6 @@ public class testAutoPage extends AutoPage {
         autoPage.setAutoNTiresTab();
         autoPage.setAutomativeTools();
     }
-
     @Test
     public void getExteriorCarAccessories(){
         TestLogger.log(convertToString(new Object() {
@@ -107,7 +97,6 @@ public class testAutoPage extends AutoPage {
         autoPage.setAutoNTiresTab();
         autoPage.setExteriorCarAccessories();
     }
-
     @Test
     public void getRvPartsAccessories(){
         TestLogger.log(convertToString(new Object() {

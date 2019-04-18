@@ -21,9 +21,7 @@ public class allDepartmentsPageTest extends AllDepartments {
         }.getClass().getSimpleName()) + " : " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         allDepartments.setAllTab();
-
     }
-
     @Test
     public void getAllDepartments(){
         TestLogger.log(convertToString(new Object() {
@@ -31,9 +29,7 @@ public class allDepartmentsPageTest extends AllDepartments {
         }.getClass().getEnclosingMethod().getName()));
         allDepartments.setAllTab();
         allDepartments.setAllDepartments();
-
     }
-
     @Test
     public void getAutoNTiresTab(){
         TestLogger.log(convertToString(new Object() {
@@ -42,7 +38,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setAutoNTiresTab();
     }
-
     @Test
     public void getBabyTab(){
         TestLogger.log(convertToString(new Object() {
@@ -51,7 +46,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setBabyTab();
     }
-
     @Test
     public void getBeautyTab(){
         TestLogger.log(convertToString(new Object() {
@@ -60,7 +54,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setBeautyTab();
     }
-
     @Test
     public void getBooksTab(){
         TestLogger.log(convertToString(new Object() {
@@ -69,7 +62,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setBooksTab();
     }
-
     @Test
     public void getCellPhonesTab(){
         TestLogger.log(convertToString(new Object() {
@@ -78,7 +70,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setCellPhonesTab();
     }
-
     @Test
     public void getClothesTab(){
         TestLogger.log(convertToString(new Object() {
@@ -87,7 +78,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setClothesTab();
     }
-
     @Test
     public void getElectronics(){
         TestLogger.log(convertToString(new Object() {
@@ -96,7 +86,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setElectronics();
     }
-
     @Test
     public void getFoodTab(){
         TestLogger.log(convertToString(new Object() {
@@ -105,7 +94,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setFoodTab();
     }
-
     @Test
     public void getFurnitureTab(){
         TestLogger.log(convertToString(new Object() {
@@ -114,7 +102,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setFurnitureTab();
     }
-
     @Test
     public void getGiftsTab(){
         TestLogger.log(convertToString(new Object() {
@@ -123,7 +110,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setGiftsTab();
     }
-
     @Test
     public void getHealthTab(){
         TestLogger.log(convertToString(new Object() {
@@ -140,7 +126,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setHomeImprovementTab();
     }
-
     @Test
     public void getHouseEssentialsTab(){
         TestLogger.log(convertToString(new Object() {
@@ -149,7 +134,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setHouseHoldEssentialsTab();
     }
-
     @Test
     public void getIndustrialTab(){
         TestLogger.log(convertToString(new Object() {
@@ -158,7 +142,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setIndustrialTab();
     }
-
     @Test
     public void getJewelryTab(){
         TestLogger.log(convertToString(new Object() {
@@ -167,7 +150,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setJewelryTab();
     }
-
     @Test
     public void getMoviesTab(){
         TestLogger.log(convertToString(new Object() {
@@ -176,7 +158,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setMoviesTab();
     }
-
     @Test
     public void getMusicTab(){
         TestLogger.log(convertToString(new Object() {
@@ -185,7 +166,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setMusicTab();
     }
-
     @Test
     public void getOfficeTab(){
         TestLogger.log(convertToString(new Object() {
@@ -194,7 +174,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setOfficeTab();
     }
-
     @Test
     public void getPartyNOccationTab(){
         TestLogger.log(convertToString(new Object() {
@@ -203,7 +182,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setPartyNOccationTab();
     }
-
     @Test
     public void getPatioTab() {
         TestLogger.log(convertToString(new Object() {
@@ -220,7 +198,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setPetsTab();
     }
-
     @Test
     public void getSportsTab(){
         TestLogger.log(convertToString(new Object() {
@@ -229,7 +206,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setSportsTab();
     }
-
     @Test
     public void getToysTab() {
         TestLogger.log(convertToString(new Object() {
@@ -238,7 +214,6 @@ public class allDepartmentsPageTest extends AllDepartments {
         allDepartments.setAllTab();
         allDepartments.setToysTab();
     }
-
     @Test
     public void getVideoGamesTab() {
         TestLogger.log(convertToString(new Object() {
